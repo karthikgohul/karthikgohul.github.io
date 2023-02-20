@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@100;200&display=swap');
+
+*{
+    background-color: #222222;
+}
+
+.header{
+position: sticky;
+top:0px;
+margin-top:-1px;
+}
+
+.header > h1{
+    color: wheat;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.search_bar{
+    background-image: url('search.png');
+    background-size: 15px;
+    background-position: 4px 5px;
+    padding: 0px 0px 0px 25px;
+    background-repeat: no-repeat;
+    /* box-sizing: border-box; */
+    float: left;
+    width: 110px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid white;
+    float: right;
+    margin-top: -45px;
+    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    outline:none !important;
+    color:white;
+    position: relative;
+}
+
+.search_bar:focus{
+    width: 400px;
+    height: 35px;
+    background-position: 3px 10px;
+}
+
+.nav{
+    display: block;
+    float: right;
+    margin-right:150px;
+    margin-top:-40px;
+    display: relative;
+}
+
+.nav a{
+    text-decoration: none;
+    margin-left: 50px;
+    color:white;
+    padding: 5px;
+    font-family:'Sofia Sans Condensed', sans-serif;
+    font-weight: 400;
+}
+
+.nav a:hover{
+    color:blue;
+    font-weight: bold;
+}
+
+.body{
+    background-color: #222222;
+}
+
+.body1{
+     height:550px;
+     padding: 50px;
+}
+
+.bg_image{
+    float: right;
+    width:400px;
+}
+
+.para1{
+    box-sizing:border-box;
+    text-align:justify;
+    width: 500px;
+    background-color: #323232;
+    margin:13% 5% 0% 10%;
+    padding: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#D5D5D5;
+}
+
+.para1 .b_image{
+    position: absolute;
+}
+
+.fa-book{
+    color: skyblue;
+    font-size: 20px;
+    margin-left: -30px;
+    position: absolute;
+}
+
+.fa-bug{
+    font-size: 20px;
+    color:skyblue;
+    position: absolute;
+    margin-left: -30px;
+}
+
+.fa-laptop{
+position: absolute;
+font-size: 20px;
+color: skyblue;
+margin-left: -30px;
+}
+
+.fa-globe{
+    margin-left:-30px;
+    color: skyblue;
+    font-size: 20px;
+    position:absolute;
+}
+
+.body2{
+ margin-top:10%
+}
+
+.para2,.para3,.para4,.para5{
+    width:450px;
+    text-align: justify;
+    color:#D5D5D5;
+    height: auto;
+}
+
+.para2{
+    margin-left:10%
+}
+
+.para4{
+    margin-left: 10%;
+}
+
+.para3{
+    margin-left: 60%;
+}
+
+.para5{
+    margin-left: 60%;
+}
