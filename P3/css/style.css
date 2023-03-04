@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Sofia+Sans+Condensed:wght@100;200&display=swap');
+
+*{
+    font-family: arimo,sans-serif;
+}
+
+@media (min-width:1200px){
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+}
+
+.navLink>li>a{
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.navLink>li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navLink{
+   margin-left: 200px;
+   display: block;
+}
+
+.navTitle{
+    position: inherit;
+    font-size:20px;
+    margin-top:12px;
+}
+
+.search{
+    position: relative;
+    margin: -40px 10px 0px 0px;
+    float:right; 
+    width: 110px;
+    outline:none;
+    transition: all 1s;
+    border-radius: 20px;
+    border:1px solid black;
+    padding: 5px;
+    padding-left: 25px;
+    background-image:url('../images/search.png');
+    background-size: 15px;
+    /* background-position: 2px; */
+    background-position-x: 5px;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+.search:focus{
+    width:250px;
+    height: 25px;
+}
+
+.fa-solid{
+    display: none !important;
+}
+
+.cancel-btn{
+    display: none;
+}
+}
+
+/* For Mobile Phones*/
+
+@media (max-width:992px){
+    .navTitle{
+    display: none;
+}
+
+    .fa-solid{
+        display: block !important;
+        margin-top: 15px;
+        margin-left:10px;
+        cursor:pointer;
+    }
+
+    .navLink-mob{
+        display: none;
+        position: fixed;
+        top:0;
+        left:0;
+        margin:0px auto 0px auto;
+        background-color: black;
+        width:100%;
+        height: 100%;
+        opacity: 0.9;
+        z-index:3;
+    }
+
+    .navLink-mob >li{
+        display: block;
+        width:60%;
+        margin:100px auto 0px auto;
+        font-size: 20px;
+    }
+
+    .cancel-btn{
+        color: white;
+        font-size: 25px;
+        margin-left:80%;
+        position: inherit;
+        margin-top: 7%;
+        cursor: pointer;
+        display: block;
+    }
+
+    .search{
+        position: relative;
+        float: right;
+        margin:-20px 0px 0px 0px;
+        z-index: 1;   
+        width: 110px;
+        outline:none;
+        transition: all 1s;
+        border-radius: 20px;
+        border:1px solid black;
+        padding: 5px;
+        padding-left: 25px;
+        background-image:url('../images/search.png');
+        background-size: 15px;
+        /* background-position: 2px; */
+        background-position-x: 5px;
+        background-position-y: 6px;
+        background-repeat: no-repeat;
+    
+}
+
+    .search:focus{
+        width:200px;
+        height:30px;
+    }
+}
