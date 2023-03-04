@@ -103,6 +103,7 @@ header{
     
     .navLink-mob > li >a{
         margin-left:50px;
+        text-decoration: none;
         color:whitesmoke;
     }
 
