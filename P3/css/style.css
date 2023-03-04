@@ -24,8 +24,9 @@ header{
 }
 
 .navLink{
-   margin-left: 200px;
-   display: block;
+    position: fixed;
+    left:150px;
+    display: block;
 }
 
 .navTitle{
@@ -35,9 +36,9 @@ header{
 }
 
 .search{
-    position: relative;
-    margin: -40px 10px 0px 0px;
-    float:right; 
+    position: fixed;
+    top:10px;
+    right: 10px;
     width: 110px;
     outline:none;
     transition: all 1s;
@@ -100,11 +101,11 @@ header{
         margin:100px auto 0px auto;
         font-size: 20px;
     }
-    
-    .navLink-mob > li >a{
-        margin-left:50px;
+
+    .navLink-mob>li>a{
         text-decoration: none;
-        color:whitesmoke;
+        margin-left: 50px;
+        color: whitesmoke;
     }
 
     .cancel-btn{
