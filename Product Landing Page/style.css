@@ -1,0 +1,93 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+  font-family: 'lato',sans-serif;
+}
+
+.head{
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
+}
+img{
+  width:300px;
+  margin-top:10px
+}
+
+ul{
+  float:right;
+  margin-right:100px;
+}
+
+li{
+  list-style-type:none;
+  display:inline-block;
+  margin-left:100px;
+}
+
+a{
+  text-decoration:none;
+  color:black;
+}
+
+#selection-1{
+  margin-top:100px;
+  text-align:center;
+}
+
+.email{
+  width:260px;
+  height:25px;
+}
+
+input[type=submit]{
+  margin:auto;
+  margin-top:20px;
+}
+
+
+.button{
+  display:block;
+  display:flex;
+  justify-content:center;
+  width:150px;
+  border:none;
+  height:30px;
+  background-color:#f1c40f;
+  color:black;
+  font-weight:900;
+  font-size:16px;
+}
+
+.icon{
+  width:20vw;
+  align-items:center;
+  display:flex;
+  justify-content:center;
+}
+
+.container{
+  display:flex;
+}
+
+#features{
+  margin-top:30px;
+}
+
+/* #features .icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:125px;
+  width:20vw;
+  color:darkorange;
+}
+
+#features .desc{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  width:80vw;
+  padding:5px;
+} */
