@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Space+Mono:wght@400;700&display=swap');  
+
+*{
+    font-family:lato,sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/*Laptop Viewport*/
+@media(min-width:992px){
+
+/*NAVIGATION BAR*/
+.nav-bar{
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    z-index: 9;
+}   
+
+.site-name{
+    color: #053E53;
+    font-size: 1.5em;
+    text-decoration: overline;
+    z-index: 3;
+    display: flex;
+    padding: 10px 10px;
+}
+
+.nav-links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 1.2em 1em;
+    gap:40px; 
+    justify-content: center;
+}
+
+
+.nav-links>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-links>li>a:hover{
+    color: #053E53;
+    text-decoration:overline;
+}
+
+.intro-icon{
+    display: flex;
+    gap:20px;
+    padding: 10px 10px;
+}
+
+.fa-brands{  
+    color: #053E53;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.fa-brands:hover{
+    transform: scale(1.5);
+}
+/*End of NavBar*/
+
+/*Main Body*/
+
+.profile{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.name-job{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-job>h1{
+    transition:1s linear;
+    font-size: 3.5em;
+    line-height: 50px; 
+    color: white;
+    -webkit-text-stroke: 2px black;
+    cursor:pointer; 
+}
+
+.name-job>h1>span{
+    -webkit-text-fill-color: black;
+}
+
+
+.name-job>h1:hover{
+        transform: scale(1.2);
+}
+
+.name-job p{
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    font-family: "space mono";
+    animation: leftin 0.5s linear;
+}
+
+@keyframes leftin {
+    0%{
+        transform: translateX(-200%);
+    }
+}
+
+.intro{
+    margin:auto;
+    line-height: 40px;
+}
+
+.intro-btn{
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    border:1px solid black;
+    cursor: pointer;
+    animation: rightin 0.5s linear;
+}
+
+@keyframes rightin {
+    0%{
+        transform: translateX(700%);
+    }
+}
+
+.intro-btn:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*Main Page*/
+
+main,footer{
+    width:70%;
+    /* border:1px solid red; */
+    margin:0px auto 0px auto;
+    color: #555 ;
+    box-sizing: border-box;
+}
+
+
+/*Resume Page*/
+.title-1{
+    font-size: 2em;
+    letter-spacing: 5px;
+    animation: resume 1s ease;
+    font-family: "space mono",monospace;
+}
+
+@keyframes resume{
+    0%{
+        transform: translateX(20%)
+    }
+
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+.resume>p,.cv>p,.achievements,.activities{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: "space mono",monospace;
+    padding: 30px;
+}
+
+/*Education*/
+
+.education{
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+}
+.title-2,.title-3,.title-4,.title-5,.title-6{
+    font-size: 1.5em;
+    font-family: "space mono",monospace;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.education-list{
+    display: flex;
+    flex-direction: column;
+    margin:0 30px;
+    list-style-type:square;
+}
+
+.inner-list>div>h4{
+    color: #053E53;
+    margin-top:30px;
+}
+
+.inner-list>div>p{
+    margin-top:25px;
+}
+
+.score, .study-year{
+    font-size: 12px;
+}
+
+.score{
+    color: #0C4458;
+}
+
+/*General Skills*/
+.skills{
+    padding:30px;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+
+.skill-details{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid yellow; */
+    padding: 10px;
+}
+
+.skill-img{
+    padding: 10px;
+}
+
+.horizantal-line{
+    width: 100%;
+    margin: auto;
+    color: #003B50;
+}
+
+.my-badges{
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.my-badges>div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+}
+
+.my-badges>.htb{
+    line-height: 40px;
+}
+
+
+.cv-btn{
+    width:130px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: #fff;
+    color: #000;
+    display:block;
+    margin:0px auto;
+}
+
+.cv-btn:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding:30px;
+}
+
+.foot>.contact,.foot>.end{
+    font-size: 1.5em;
+    font-family: "space mono",monospace;
+}
+
+.form-field{
+    margin-top:10px;
+    display: flex;
+    padding:30px;
+}
+
+.form-field input{
+    display: block;
+    width: 240px;
+    height: 40px;
+    margin-top:10px;
+    outline: none;
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+.form-field textarea{
+    display: block;
+    width: 240px;
+    height: 190px;
+    margin-top:10px;
+    outline: none;
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+.form-btn{
+    width:80px;
+    height: 35px;
+    border:1px solid black;
+    background-color: #fff;
+    cursor: pointer;
+    display: block;
+    margin:0px auto;
+}
+
+.form-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+}
+
+/* @media(min-width:447px){
+    .nav-hide{
+        display: none;
+    }
+    .ham-menu{
+        display: flex;
+        flex-direction: column;
+        gap:4px;
+        cursor: pointer;
+    }
+
+    .ham-menu >span{
+        border:1px solid red;
+        width: 25px;
+    }
+} */
