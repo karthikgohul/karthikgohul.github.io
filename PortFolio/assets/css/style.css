@@ -12,7 +12,7 @@
 @media(min-width:992px){
 
 /*NAVIGATION BAR*/
-.nav-bar,.hide{
+.nav-bar{
     width: 100%;
     height: 10px;
     position: fixed;
@@ -54,6 +54,10 @@
 .nav-links>li>a:hover{
     color: #053E53;
     text-decoration:overline;
+}
+
+.close,.intro-icon-mob{
+    display: none;
 }
 
 .intro-icon{
@@ -341,7 +345,7 @@ main,footer{
         width: 100%;
     }
 
-    .site-name,.nav-links{
+    .site-name{
         display: none;
     }
 
@@ -351,12 +355,64 @@ main,footer{
         flex-direction: column;
         gap: 3px;
         cursor: pointer;
-        float: right;
         padding: 20px;
     }
     .ham-menu span{
         width: 30px;
         border: 1px solid black;
+    }
+    .intro-icon{
+        display: block;
+    }
+
+         .nav-links{
+        margin-top:120px;
+        padding:70px;
+    }
+
+    .nav-bar{
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        display: none;
+        z-index:1;
+        opacity: 0.9;
+    }
+
+    .nav-links li{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav-links li a{
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: "space mono",monospace;
+    }
+
+    .nav-links li a:hover{
+        transform: scale(1.2);
+    }
+
+    .close{
+        color: white;
+        cursor: pointer;
+        position: relative;
+        float: left;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .close:hover{
+        color: red;
     }
 
     .profile{
@@ -424,6 +480,27 @@ main,footer{
         background-color: black;
         color: whitesmoke;
     }   
+
+    .intro-icon{
+        display: none;
+    }
+
+    .intro-icon-mob{
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        box-sizing: border-box;
+    }
+
+    .fa-brands{
+        color: #003B50;
+        transition: 0.5s ease-in-out;
+    }
+
+    .fa-brands:hover{
+        transform: scale(1.2);
+    }
 
     main{
         width: 95%;
