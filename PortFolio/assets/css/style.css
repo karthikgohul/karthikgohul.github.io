@@ -12,7 +12,7 @@
 @media(min-width:992px){
 
 /*NAVIGATION BAR*/
-.nav-bar{
+.nav-bar,.hide{
     width: 100%;
     height: 10px;
     position: fixed;
@@ -23,7 +23,7 @@
     align-items: center;
     padding: 20px;
     z-index: 9;
-}   
+}
 
 .site-name{
     color: #053E53;
@@ -149,7 +149,6 @@
 
 main,footer{
     width:70%;
-    /* border:1px solid red; */
     margin:0px auto 0px auto;
     color: #555 ;
     box-sizing: border-box;
@@ -337,19 +336,282 @@ main,footer{
 }
 }
 
-/* @media(min-width:447px){
-    .nav-hide{
+@media only screen and (max-width:480px){
+    .theme{
+        width: 100%;
+    }
+
+    .site-name,.nav-links{
         display: none;
     }
+
+    /*Ham Menu*/
     .ham-menu{
         display: flex;
         flex-direction: column;
-        gap:4px;
+        gap: 3px;
         cursor: pointer;
+        float: right;
+        padding: 20px;
+    }
+    .ham-menu span{
+        width: 30px;
+        border: 1px solid black;
     }
 
-    .ham-menu >span{
-        border:1px solid red;
-        width: 25px;
+    .profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 97%;
+        margin: 0px auto;
+        box-sizing:border-box;
+        margin-top: 20px;
     }
-} */
+
+    .name-job{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 40px;
+        padding: 10px;
+    }
+
+    .name-job h1{
+            color: #000;
+            -webkit-text-stroke: 1px #000;
+            -webkit-text-fill-color: #fff;
+            transition: 1s;
+            cursor: pointer;
+    }
+
+    .name-job h1:hover{
+        transform: scale(1.3);
+    }
+
+    .name-job span{
+        -webkit-text-fill-color: #000;;
+    }
+
+    .name-job p{
+        font-size: 13px;
+        animation: leftin 0.5s linear;
+    }
+    
+    @keyframes leftin {
+        0%{
+            transform: translateX(-300%);
+        }
+    }
+    .intro-btn{
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border:1px solid black;
+        cursor: pointer;
+        animation: rightin 0.5s linear;
+    }
+    
+    @keyframes rightin {
+        0%{
+            transform: translateX(400%);
+        }
+    }
+    
+    .intro-btn:hover{
+        background-color: black;
+        color: whitesmoke;
+    }   
+
+    main{
+        width: 95%;
+        margin:10px auto;
+        color: #555;    
+    }
+
+    .title-1{
+        font-size: 1.3em;
+        letter-spacing: 5px;
+        animation: resume 1s ease;
+        font-family: "space mono",monospace;
+    }
+
+    .resume p{
+        text-align: justify;
+        font-family: "space mono", monospace;
+        padding: 10px;
+    }
+
+    .title-2,.title-3,.title-4,.title-5,.title-6,.title-7{
+        font-family: "space mono",monospace;
+        font-weight: 400;
+        letter-spacing:5px;
+        font-size: 16px;
+    }
+
+    .education-list li{
+        font-size: 13px;
+        padding-top: 20px;
+        list-style-type: square;
+        margin:0px 10px;
+        line-height: 30px;
+    }
+
+    .inner-list h4{
+        color: #003B50;
+    }
+    .inner-list .score{
+        font-size: 10px;
+        color: #003B50;
+    }
+
+    .inner-list .study-year{
+        font-size: 10px;
+    }
+
+    .skills{
+        width: 100%;
+        box-sizing: border-box;
+        padding:20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:2em
+
+    }
+
+    .skills>.skill-details{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        line-height: 50px;
+        }
+
+    .achievements{
+        padding: 20px;
+    }
+
+    .achieve-name>h4{
+        font-size: 13px;
+        font-family: "space mono",monospace;
+    }
+
+    .achieve-name>p,.achieve-name>ul>li{
+        padding:5px 0px;
+        text-align: justify;
+    }
+
+    .activities{
+        padding: 20px;
+    }
+    .activities-list>li{
+        text-align: justify;
+        padding: 5px;
+    }
+
+    .my-badges{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+
+    .my-badges>.htb{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        width: 250px;
+
+    }
+    .my-badges>.thm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+        width: 250px;
+    }
+
+    .my-cv{
+        padding-top: 10px;
+    }
+    .cv{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap:20px;
+    }
+    .cv>p{
+        text-align: justify;
+        font-family: "space mono",monospace;
+    }
+    .cv-btn{
+        width: 120px;
+        height: 30px;
+        background-color: #fff;
+        border:1px solid black;
+        cursor: pointer;
+        display: block;
+        margin: 0px auto;
+    }
+    .cv-btn:hover{
+        color: white;
+        background-color: #000;
+    }
+
+    .foot{
+        width: 100%;
+    }
+    .contact{
+        font-size: 16px;
+        font-family: "space mono",monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-field{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        line-height: 20px;
+    }
+    .form-field input{
+        display: block;
+        margin: 0px auto;
+        width: 300px;
+        height: 30px;
+    }
+    .form-field textarea{
+        display: block;
+        margin:0px auto; 
+        width: 300px;
+        height: 200px;   
+    }
+    
+    .form-btn{
+        width: 120px;
+        height: 30px;
+        background-color: #fff;
+        border:1px solid black;
+        cursor: pointer;
+        display: block;
+        margin: 0px auto;
+    }
+    .form-btn:hover{
+        color: white;
+        background-color: #000;
+    }
+    .end{
+        font-size: 13px;
+        display: flex;
+        justify-content: center;  
+        margin-top: 10px;
+    }
+}
