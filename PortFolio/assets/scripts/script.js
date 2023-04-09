@@ -7,3 +7,8 @@ function navMob(){
             hamMenu.style.display="block";
         }
     }
+
+function navClose(){
+    var close=document.getElementById('nav-links')
+    close.style.display="none"
+}
