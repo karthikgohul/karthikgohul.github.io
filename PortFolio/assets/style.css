@@ -259,9 +259,22 @@ main,footer{
     align-items: center;
     padding:10px;
 }
-
+    
 .my-badges>.htb{
     line-height: 40px;
+    transition: 1s;
+    cursor:pointer;
+}
+.htb:hover{
+    transform: scale(1.2);
+}
+
+.my-badges>.thm{
+    transition: 1s;
+    cursor:pointer;
+}
+.thm:hover{
+    transform: scale(1.2);
 }
 
 
