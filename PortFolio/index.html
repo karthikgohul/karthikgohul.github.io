@@ -19,12 +19,12 @@
             <div class="nav-br hide">
             <div class="nav-bar"  id="nav-links">
                 <h2 class="site-name">PortFolio</h2>
-                <i class="close" onclick="navClose()">X</i>
+                <i class="close" onclick="navClose()">&times;</i>
                 <ul class="nav-links">
-                    <li class="link-two"><a href="#resume">Resume</a></li>
-                    <li class="link-four"><a href="#achievements">Achievements</a></li>
-                    <li class="link-four"><a href="#activities">Activities</a></li>
-                    <li class="link-five"><a href="#contact">Contact</a></li>
+                    <li class="links" onclick="navClose()"><a href="#resume">Resume</a></li>
+                    <li class="links" onclick="navClose()"><a href="#achievements">Achievements</a></li>
+                    <li class="links" onclick="closeLink()"><a href="#activities">Activities</a></li>
+                    <li class="links" onclick="closeLink()"><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="intro-icon">
                     <a href="https://github.com/karthikgohul/" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -60,6 +60,7 @@
             <br>
             <section class="education">
                 <div><h2 class="title-2">Education</h2></div>
+                
                     <ul class="education-list">
                     <li class="inner-list">
                         <div class="education-details">
