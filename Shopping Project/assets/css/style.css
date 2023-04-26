@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.nav-bar-one{
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 100px;
+    background-color: gold;
+    height: 30px;
+    font-family: 'Lato';
+    font-size:13px
+}
+
+.nav-bar-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 17px;
+    font-family: 'Roboto';
+    padding: 0px 100px;
+    border: 1px solid black;
+}
+
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.nav-links li:hover{
+    color: #5B58D0;
+    transform: scale(1.1);
+}
+
+.search-bar{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    height: 35px;
+    margin: 0px 0px 0px 100px;
+    padding-left: 20px;
+    outline: none;
+}
+
+.fa-magnifying-glass{
+    margin-left: -30px;
+    color: black;
+}
+
+.theme-1{
+    background: rgb(91,88,208);
+    background: linear-gradient(40deg, rgba(91,88,208,1) 39%, rgba(90,89,207,1) 80%, rgba(13,59,153,1) 100%); 
+    height: auto;
+}
+
+.theme-1 h4{
+    font-family: 'space mono';
+    color: white;
+    width: 80px;
+    padding: 30px 100px;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro img{
+    width: 500px;
+    transition: 2s;
+}
+
+.intro img:hover{
+    transform: scale(1.2);
+}
+
+.intro h3{
+    font-size: 50px;
+    font-family: 'space mono';
+    width: 400px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.intro h3:hover{
+    transform: rotate(10deg);
+}
+
+.intro h3:hover span{
+    color: yellow;
+    -webkit-text-stroke: 2px white;
+    -webkit-text-fill-color: #5A59CF;
+}
