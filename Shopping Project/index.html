@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <script src="https://kit.fontawesome.com/8efa269c87.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
@@ -17,7 +19,7 @@
                 <li>Get 50% Off on selected Items | Shop Now</li>
                 <li><i class="fa-solid fa-envelope"></i>shoppeee@gmail.com</li>
             </ul>
-            <div class="nav-bar-two"  id="nav-links">
+            <div class="nav-bar-two" id="nav-links">
                 <h2 class="site-name">Shoppers</h2>
                 <ul class="nav-links">
                     <li class="links"><a href="#resume">Category</a></li>
@@ -26,50 +28,174 @@
                     <li class="links"><a href="#contact">Delivery</a></li>
                 </ul>
                 <div class="nav-links-2">
-                <div class="search">
-                <input class="search-bar" type="search" placeholder="Search Items">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="search">
+                        <input class="search-bar" type="search" placeholder="Search Items">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="account"><i class="fa-solid fa-user-plus"></i>Account</div>
                 </div>
-                <div class="account"><i class="fa-solid fa-user-plus"></i>Account</div>
-            </div>
             </div>
         </nav>
     </header>
     <main>
         <section class="section-1">
-        <h4>SHOPPERS</h4>
-        <div class="intro">
-            <img src="assets/images/dots.png">
-            <h3>Want to <span>shop</span> return to us</h3>
-        </div>
-    </section>
-    <section class="section-2">
-        <div>
+            <h4>SHOPPERS</h4>
+            <div class="intro">
+                <img src="assets/images/dots.png">
+                <h3>Want to <span>shop</span> return to us</h3>
+            </div>
+        </section>
+        <section class="section-2">
             <h3>Shop Top Category</h3>
-        </div>
-        <div class="category-container">
             <div class="category-images">
-                <div class="cat-size electronics">
-                    <h3>Electronics</h3>
-                <img src="assets/images/Electronics.png">
+                <div class="products-details">
+                    <div class="products-name">
+                        <h4>Electronics</h4>
+                    </div>
+                    <div class="products-img">
+                        <img width="40px" src="assets/images/electronics.png">
+                    </div>
+                </div>
+                <div class="products-details">
+                    <div class="products-name">
+                        <h4>Home Appliances</h4>
+                    </div>
+                    <div class="products-img">
+                        <img width="50px" src="assets/images/home.png">
+                    </div>
+                </div>
+                <div class="products-details">
+                    <div class="products-name">
+                        <h4>Gaming</h4>
+                    </div>
+                    <div class="products-img">
+                        <img width="50px" src="assets/images/gaming.png">
+                    </div>
+                </div>
+                <div class="products-details">
+                    <div class="products-name">
+                        <h4>Fashion</h4>
+                    </div>
+                    <div class="products-img">
+                        <img width="60px" src="assets/images/fashion.png">
+                    </div>
+                </div>
+                <div class="products-details">
+                    <div class="products-name">
+                        <h4>Books</h4>
+                    </div>
+                    <div class="products-img">
+                        <img width="60px" src="assets/images/books.png">
+                    </div>
+                </div>
+                <div class="products-details">
+                    <div class="products-name">
+                        <h4>Jewelery</h4>
+                    </div>
+                    <div class="products-img">
+                        <img width="60px" src="assets/images/jewelery.png">
+                    </div>
+                </div>
             </div>
-            <div class="cat-size home">
-                <h3>Home Appliances</h3>
-                <img src="assets/images/home.png">
             </div>
-            <div class="cat-size fashion">
-                <h3>Fashion</h3>
-                <img src="assets/images/fashion.png">
-                
+        </section>
+        <section class="section-3">
+            <h3>Today's Deals</h3>
+            <div class="today-deals">
+                <div class="thumbnails">
+                    <div class="thumbnails-details">
+                        <div class="thumbnail-1">
+                            <img width="300px" src="assets/images/keyboards.png">
+                        </div>
+                        <div class="name-price">
+                            <h4>Dell Keyboard</h4>
+                            <h4>₹1350</h4>
+                        </div>
+                        <p>Chiclet Keyboard</p>
+                        <button>Check Out</button>
+                    </div>
+
+                    <div class="thumbnails-details">
+                        <div class="thumbnail-1">
+                            <img width="150px" src="assets/images/sony earphone.png">
+                        </div>
+                        <div class="name-price">
+                            <h4>Sony Headphone</h4>
+                            <h4>₹3400</h4>
+                        </div>
+                        <p>13mm high bass, Bluetooth 5.0</p>
+                        <button>Check Out</button>
+                    </div>
+
+                    <div class="thumbnails-details">
+                        <div class="thumbnail-1">
+                            <img width="250px" src="assets/images/ps3 controller.png">
+                        </div>
+                        <div class="name-price">
+                            <h4>Playstation 3 Controller</h4>
+                            <h4>₹700</h4>
+                        </div>
+                        <p>Wireless, two analog joystick</p>
+                        <button>Check Out</button>
+                    </div>
+                </div>
             </div>
-            <div class="cat-size gaming">
-                <h3>Gaming</h3>
-                <img src="assets/images/gaming.png">
+            <h4 id="mores-hide" class="mores-hide">More<i onclick="more()" class="fa-solid fa-caret-down"></i></h4>
+            <div class="next" id="nexxt">
+                <div class="thumbnails">
+                    <div class="thumbnails-details">
+                        <div class="thumbnail-1">
+                            <img width="180px" src="assets/images/sony pendrive.png">
+                        </div>
+                        <div class="name-price">
+                            <h4>Sony Pendrive 16Gb</h4>
+                            <h4>₹480</h4>
+                        </div>
+                        <p>version 3.0, speed 40m/s</p>
+                        <button>Check Out</button>
+                    </div>
+
+                    <div class="thumbnails-details">
+                        <div class="thumbnail-1">
+                            <img width="250px" src="assets/images/speakers.png">
+                        </div>
+                        <div class="name-price">
+                            <h4>Genius Speaker</h4>
+                            <h4>₹7000</h4>
+                        </div>
+                        <p>Stereo, high bass and treble</p>
+                        <button>Check Out</button>
+                    </div>
+
+                    <div class="thumbnails-details">
+                        <div class="thumbnail-1">
+                            <img width="300px" src="assets/images/tv.png">
+                        </div>
+                        <div class="name-price">
+                            <h4>Samsung TV (32 inch)</h4>
+                            <h4>₹20000</h4>
+                        </div>
+                        <p>LED, High definition, 60Hz</p>
+                        <button>Check Out</button>
+                    </div>
+                </div>
+                <!-- <button onclick="hide()">Hide</button> -->
             </div>
             </div>
-        </div>
+        </section>
+        <section class="section-4">
+            <div class="offer-banner">
+                <div class="offer-details">
+                    <div class="offer-banner-details">
+                        <h2><span>Get 10% Cashback</span> on selected items</h2>
+                        <button class="offer-btn">Learn More</button>
+                    </div>
+                    <img width="300px" src="assets/images/offer-banner-image.png">
+                </div>
+            </div>
         </section>
         <br><br><br>
     </main>
-    </body>
+</body>
+
 </html>
