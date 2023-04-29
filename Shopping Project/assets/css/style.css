@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
 .nav-bar-one {
     list-style-type: none;
     display: flex;
@@ -300,4 +307,80 @@
 
 .offer-banner-details h2:hover {
     transform: rotate(10deg);
+}
+
+.more-selling-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.thumbnails-details {
+    display: flex;
+}
+
+.today-deals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-item {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.footer-1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.footer-1 p {
+    width: 300px;
+    text-align: justify;
+}
+
+.depart {
+    margin-top: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.depart li {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.depart li:hover {
+    transform: translateX(10%);
+    color: orangered;
+}
+
+.footer-5 {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-5 ul {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.footer-end li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
