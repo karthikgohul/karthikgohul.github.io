@@ -1,14 +1,9 @@
-function navMob(){
-    var hamMenu=document.getElementById('nav-links')
-        if (hamMenu.style.display==="block"){
-            hamMenu.style.display="none";
-        }
-        else{
-            hamMenu.style.display="block";
-        }
-    }
+function navMob() {
+    var Nav = document.getElementById('mobile-menu')
+    Nav.classList.toggle('mobile-menu')
+}
 
-function navClose(){
-    var close=document.getElementById('nav-links')
-    close.style.display="none"
+function closeNav() {
+    var close = document.getElementById('mobile-menu')
+    close.classList.toggle('mobile-menu')
 }
