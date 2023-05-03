@@ -1,173 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta charset="UTF-8">
-        <title>My PortFolio</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script async src="assets/scripts/script.js"></script>
-        <script src="https://kit.fontawesome.com/8efa269c87.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="theme">
-        <header>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>My PortFolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/8efa269c87.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="theme">
+    <header>
         <nav>
             <div class="ham-menu" onclick="navMob()">
                 <span></span>
                 <span></span>
-                <span></span>   
+                <span></span>
             </div>
-            <div class="nav-br hide">
-            <div class="nav-bar"  id="nav-links">
-                <h2 class="site-name">PortFolio</h2>
-                <i class="close" onclick="navClose()">&times;</i>
-                <ul class="nav-links">
-                    <li class="links" onclick="navClose()"><a href="#resume">Resume</a></li>
-                    <li class="links" onclick="navClose()"><a href="#achievements">Achievements</a></li>
-                    <li class="links" onclick="closeLink()"><a href="#activities">Activities</a></li>
-                    <li class="links" onclick="closeLink()"><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="intro-icon">
-                    <a href="https://github.com/karthikgohul/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/karthikgohul-anandhakumar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/karthik_gohul/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="nav-bar" id="nav-bar">
+                    <i class="close" onclick="closeNav()">X</i>
+                    <h2 class="site-name">PortFolio</h2>
+                    <ul class="nav-links">
+                        <li class="links" onclick="navClose()"><a href="#resume">Resume</a></li>
+                        <li class="links"><a href="#achievements">Achievements</a></li>
+                        <li class="links"><a href="#activities">Activities</a></li>
+                        <li class="links"><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="intro-icon">
+                        <a href="https://github.com/karthikgohul/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/karthikgohul-anandhakumar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/karthik_gohul/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
                 </div>
-            </div>  
-        </div>        
+            </div>
         </nav>
-        
+
         <div class="profile">
             <section class="intro">
                 <div class="name-job">
                     <h1><span>K</span>arthik<span>G</span>ohul</h1>
                     <!-- <h1><span class="flipy">K</span>ARTHIK<span>G</span>OHUL</h1> -->
                     <p> Software Engineer and Computer Enthusiast</p>
-                    <button class="intro-btn">Know More</button>
+                    <button class="intro-btn"><a href="#resume">Know More</a></button>
                     <div class="intro-icon-mob">
                         <a href="https://github.com/karthikgohul/" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/karthikgohul-anandhakumar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://www.instagram.com/karthik_gohul/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
                     </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section id="resume"></section>
+        <section class="resume">
+            <div>
+                <h2 class="title-1">Resume_</h2>
+            </div>
+            <p>Looking for a challenging role in a reputable organization to utilize my technical, security, and management skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the IT sector.</p>
+        </section>
+        <br>
+        <section class="education">
+            <div>
+                <h2 class="title-2">Education</h2>
+            </div>
+
+            <ul class="education-list">
+                <li class="inner-list">
+                    <div class="education-details">
+                        <h4>SBM College of Engineering and Technology</h4>
+                        <p class="study">Computer Science and Engineering</p>
+                        <p class="score">CGPA:8.5/10</p>
+                        <p class="study-year">2019-2023</p>
                     </div>
-            </section>
+                </li>
+                <li class="inner-list">
+                    <div>
+                        <h4>Government Higher Secondary School</h4>
+                        <p class="study">HSC</p>
+                        <p class="score">Percentage: 62.8%</p>
+                        <p class="study-year">2018-2019</p>
+                    </div>
+                </li>
+                <li class="inner-list">
+                    <div>
+                        <h4>Government Higher Secondary School</h4>
+                        <p class="study">SSLC</p>
+                        <p class="score">Percentage: 86.2%</p>
+                        <p class="study-year">2016-2017</p>
+                    </div>
+                </li>
+            </ul>
             </div>
-        </header>
-        <main>
-            <section  id="resume"></section>
-            <section class="resume">
-                <div><h2 class="title-1">Resume_</h2></div>
-                <p>Looking for a challenging role in a reputable organization to utilize my technical, security, and management skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the IT sector.</p>
-            </section>
-            <br>
-            <section class="education">
-                <div><h2 class="title-2">Education</h2></div>
-                
-                    <ul class="education-list">
-                    <li class="inner-list">
-                        <div class="education-details">
-                            <h4>SBM College of Engineering and Technology</h4>
-                            <p class="study">Computer Science and Engineering</p>
-                            <p class="score">CGPA:8.5/10</p>
-                            <p class="study-year">2019-2023</p>
-                        </div>
-                    </li>
-                    <li class="inner-list">
-                        <div>
-                            <h4>Government Higher Secondary School</h4>
-                            <p class="study">HSC</p>
-                            <p class="score">Percentage: 62.8%</p>
-                            <p class="study-year">2018-2019</p>   
-                        </div>
-                    </li>
-                    <li class="inner-list">
-                        <div>
-                            <h4>Government Higher Secondary School</h4>
-                            <p class="study">SSLC</p>
-                            <p class="score">Percentage: 86.2%</p>
-                            <p class="study-year">2016-2017</p>
-                        </div>
-                    </li>
-                </ul>
             </div>
+        </section>
+        <br>
+        <hr class="horizantal-line"><br>
+        <section class="general-skills">
+            <h2 class="title-3">General Skills</h2>
+            <div class="skills">
+                <div class="skill-details">
+                    <div class="skill-name">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skill-img">
+                        <img width="40px" src="assets/images/htmlSkill.png">
+                    </div>
                 </div>
-            </section>
-            <br><hr class="horizantal-line"><br>
-            <section class="general-skills">
-                <h2 class="title-3">General Skills</h2>
-                <div class="skills">
-                    <div class="skill-details">
-                        <div class="skill-name">
-                            <h4>HTML</h4>
-                        </div>
-                        <div class="skill-img">
-                            <img width="40px" src="assets/images/htmlSkill.png">
-                        </div>
-                        </div>
-                        <div class="skill-details">
-                            <div class="skill-name">
-                                <h4>CSS</h4>
-                            </div>
-                            <div class="skill-img">
-                                <img width="50px" src="assets/images/cssSkill.png">
-                            </div>
-                            </div>
-                            <div class="skill-details">
-                                <div class="skill-name">
-                                    <h4>Javascript</h4>
-                                </div>
-                                <div class="skill-img">
-                                    <img width="50px" src="assets/images/javascriptSkill.png">
-                                </div>
-                                </div>
-                                <div class="skill-details">
-                                <div class="skill-name">
-                                    <h4>Linux</h4>
-                                </div>
-                                <div class="skill-img">
-                                    <img width="40px" src="assets/images/linuxSkill.png">
-                                </div>
-                                </div>
-                                <div class="skill-details">
-                                    <div class="skill-name">
-                                        <h4>Penetration Testing</h4>
-                                    </div>
-                                    <div class="skill-img">
-                                        <img width="60px" src="assets/images/pentestSkill.png">
-                                    </div>
-                                    </div>
-                                </div>
+                <div class="skill-details">
+                    <div class="skill-name">
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skill-img">
+                        <img width="50px" src="assets/images/cssSkill.png">
+                    </div>
                 </div>
-            </section>
-            <hr class="horizantal-line">
-            <br>
-            <section id="achievements"></section>
-            <section class="my-achievements">
-                <h2 class="title-4">Acheivements and Activities</h2>
-                <div class="achievements">
-                    <div class="achieve-name">
-                        <h4>Vulnerability Disclosure Program</h4>
-                        <p>I secured several companies from the security threats and got Hall of Fame and Compensation</p>
-                        <ul>
-                            <li>Hall of Fame - <a href="https://bugcrowd.com/rokt-pte-vdp-pro/hall-of-fame" target=_blank>ROKT</a></li>
-                            <li>Hall of Fame - <a href="https://whimsical.com/vulnerability-disclosure" target=_blank>Whimsical</a></li>
-                            <li>H&M</li>
-                            <li>Maze.co</li>
-                            <li>Maxem.io</li>
-                        </ul>
-                        <br>
-                        <h4>Classes</h4>
-                        <ul>
+                <div class="skill-details">
+                    <div class="skill-name">
+                        <h4>Javascript</h4>
+                    </div>
+                    <div class="skill-img">
+                        <img width="50px" src="assets/images/javascriptSkill.png">
+                    </div>
+                </div>
+                <div class="skill-details">
+                    <div class="skill-name">
+                        <h4>Linux</h4>
+                    </div>
+                    <div class="skill-img">
+                        <img width="40px" src="assets/images/linuxSkill.png">
+                    </div>
+                </div>
+                <div class="skill-details">
+                    <div class="skill-name">
+                        <h4>Penetration Testing</h4>
+                    </div>
+                    <div class="skill-img">
+                        <img width="60px" src="assets/images/pentestSkill.png">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <hr class="horizantal-line">
+        <br>
+        <section id="achievements"></section>
+        <section class="my-achievements">
+            <h2 class="title-4">Acheivements</h2>
+            <div class="achievements">
+                <div class="achieve-name">
+                    <h4>Vulnerability Disclosure Program</h4>
+                    <p>I secured several companies from the security threats and got Hall of Fame and Compensation</p>
+                    <ul>
+                        <li>Hall of Fame - <a href="https://bugcrowd.com/rokt-pte-vdp-pro/hall-of-fame" target=_blank>ROKT</a></li>
+                        <li>Hall of Fame - <a href="https://whimsical.com/vulnerability-disclosure" target=_blank>Whimsical</a></li>
+                        <li>H&M</li>
+                        <li>Maze.co</li>
+                        <li>Maxem.io</li>
+                    </ul>
+                    <br>
+                    <h4>Classes</h4>
+                    <ul>
                         <li>Participated in Ethical hacking Program conducted by the Prompt Infotech</li>
                         <li>Participated in the Web development Program conducted by APSSDC and Pantech</li>
                     </ul>
-                    </div>
                 </div>
-            </section>
-            <hr class="horizantal-line">
-            <br>
-            <section class="my-activities">
-                <h2 class="title-5">Activities</h2>
-                <div class="activities">
-                    <ul class="activities-list">
+            </div>
+        </section>
+        <hr class="horizantal-line">
+        <br>
+        <section id="activities"></section>
+        <section class="my-activities">
+            <h2 class="title-5">Activities</h2>
+            <div class="activities">
+                <ul class="activities-list">
                     <li>Participated in the Inter College meet and talked about the Computer Safety</li>
                     <li>Participated in the Hackthon conducted by the Wikitechy</li>
                     <li>Participated in online hacking playgrounds</li>
@@ -175,52 +183,52 @@
 
                 <div class="badges">
                     <h3 class="title-6">Badges</h3>
-                <div class="my-badges">
-                    <br>
-                    <div class="htb">
-                        <h3>HackTheBox</h3>
-                        <script src="https://www.hackthebox.eu/badge/392420"></script>
+                    <div class="my-badges">
+                        <br>
+                        <div class="htb">
+                            <h3>HackTheBox</h3>
+                            <script src="https://www.hackthebox.eu/badge/392420"></script>
+                        </div>
+                        <div class="thm">
+                            <h3>TryHackMe</h3>
+                            <script src="https://tryhackme.com/badge/181865"></script>
+                        </div>
                     </div>
-                <div class="thm">
-                    <h3>TryHackMe</h3>
-                    <script src="https://tryhackme.com/badge/181865"></script>
                 </div>
             </div>
-        </div>
-                </div>
-            </section>
-            <hr class="horizantal-line">
-            <br>
-            <section class="my-cv">
-                <h2 class="title-7">Hi There</h2>
-                <div class="cv">
-                <p>I am currently seeking new oppurtunities in Computer field. I have strong passion for computer Science field. I'm skilled in Web development and Cyber Security. I'm a highly motivated and result-driven professional who thrives in fast-paced environments. I'm constantly seeking ways to improve and stay updated with industry trends to deliver the best results</p>
-                <button class="cv-btn">DOWNLOAD CV</button>
+        </section>
+        <hr class="horizantal-line">
+        <br>
+        <section class="my-cv">
+            <h2 class="title-7">Hi There</h2>
+            <div class="cv">
+                <p>I am currently seeking new oppurtunities in Computer field. I have strong passion for computer Science field. I'm skilled in Web development and Cyber Security. I'm a highly motivated and result-driven professional who thrives in fast-paced
+                    environments. I'm constantly seeking ways to improve and stay updated with industry trends to deliver the best results</p>
+                <button class="cv-btn"><a href="assets/images/Resume.pdf" target="_blank">DOWNLOAD CV</a></button>
             </div><br>
-            </section>
-            <hr class="horizantal-line">
-            <br>
-        </main>
-        <footer class="foot">
-            <section id="contact"></section>
-            <h3 class="contact">Contact Me</h3>
-            <div class="form-field">
+        </section>
+        <hr class="horizantal-line">
+        <br>
+    </main>
+    <section id="contact"></section>
+    <footer class="foot">
+        <h3 class="contact">Contact Me</h3>
+        <div class="form-field">
             <form action="https://formspree.io/f/xbjeprbj" method="POST">
-            <label>Your Name:
+                <label>Your Name:
                 <input type="text" name="name">
             </label><br>
-            <label>Your email:
+                <label>Your email:
              <input type="email" name="email">
             </label><br>
-            <label>Your message:
+                <label>Your message:
     <textarea name="message"></textarea>
             </label><br>
-  <!-- your other form fields go here -->
-            <button type="submit" class="form-btn">Send</button>
+                <!-- your other form fields go here -->
+                <button type="submit" class="form-btn">Send</button>
             </form>
-            </div>
-            <h3 class="end">P0rtF0l10 by K4rth1k</h3>
-        </footer>
-        
-        </body>
+        </div>
+        <h3 class="end">P0rtF0l10 by K4rth1k</h3>
+    </footer>
+</body>
 </html>
