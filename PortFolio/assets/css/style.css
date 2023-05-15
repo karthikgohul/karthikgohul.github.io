@@ -552,6 +552,7 @@ footer {
         width: 95%;
         margin: 10px auto;
         color: #555;
+        padding: 10px;
     }
     .title-1 {
         font-size: 1.3em;
@@ -649,18 +650,18 @@ footer {
         align-items: center;
         gap: 5px;
     }
-    .my-cv {
-        padding-top: 10px;
-    }
+   
     .cv {
         display: flex;
         flex-direction: column;
         margin: -15 px;
         gap: 20px;
+        padding: 10px;
     }
     .cv>p {
         text-align: justify;
         font-family: "space mono", monospace;
+        padding: 0;
     }
     .cv-btn {
         width: 140px;
