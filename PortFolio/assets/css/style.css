@@ -109,82 +109,89 @@
 
 /*Main Body*/
 
-.profile {
-    display: flex;
-    width: 100%;
-    height: 400px;
-}
 
-.name-job {
-    width: 100%;
+.my-details{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    width: 50%; height: 580px;
+    justify-content: center;
     align-items: center;
+    margin:50px auto;
+    font-family: lato;
+    
 }
-
-.name-job>h1 {
-    transition: 1s linear;
-    font-size: 3.5em;
-    line-height: 50px;
-    color: white;
-    -webkit-text-stroke: 2px black;
-    cursor: pointer;
+.name-container{
+    text-align: center;
+    
 }
-
-.name-job>h1>span {
-    -webkit-text-fill-color: black;
+.my-detail{
+    font-size: 15px;
 }
-
-.name-job>h1:hover {
-    transform: scale(1.2);
-}
-
-.name-job p {
-    color: black;
-    text-shadow: 1px 1px 1px white;
-    font-family: "space mono";
-    animation: leftin 0.5s linear;
-}
-
-@keyframes leftin {
-    0% {
-        transform: translateX(-200%);
-    }
-}
-
-.intro {
-    margin: auto;
-    line-height: 40px;
-}
-
-.intro-btn {
-    width: 100px;
-    height: 30px;
-    background-color: #fff;
-    border: 1px solid black;
-    cursor: pointer;
-    animation: rightin 0.5s linear;
-}
-
-.intro-btn:hover:after {
-    content: '\00bb';
+.cube{
     position: absolute;
-    margin-left: 5px;
-    opacity: 1;
+    width: 200px;
+    /* margin-top: 450px; */
+    margin:420px -60px;
+    opacity: 0.5;
 }
-
-@keyframes rightin {
-    0% {
-        transform: translateX(700%);
+.sphere{
+    position: absolute;
+    width: 200px;
+    float: right;
+    margin: 100px -0px;
+    opacity: 0.4;
+}
+.sphere-img{
+    display: flex;
+    justify-content: end;
+}
+.my-photo{
+    width: 150px;
+    border-radius: 100px;
+    margin:5px 0px;
+    transition: 1s;
+    cursor: pointer;
+    animation: 1s rotate ease-in-out;
+    
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
-
-.intro-btn:hover {
-    background-color: black;
-    color: whitesmoke;
+.my-name{
+    font-size: 40px;
+    font-weight:700;
+    background-image: /*#531652*/ linear-gradient(to right,#76757A,#aeacac);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
-
+.my-photo:hover{
+    width: 250px;
+}
+.my-info{
+    margin:20px 0px;
+    text-align:justify;
+    line-height: 25px;
+    font-size: 17px;
+    
+    padding: 10px;
+}
+.hero-btn{
+    border: 1px solid #555;
+    width: 100px; height: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    
+}
+.hero-btn:hover{
+    background-color: #070510;
+    color: #fff;
+}
 
 /*Main Page*/
 
@@ -246,31 +253,71 @@ footer {
     letter-spacing: 5px;
 }
 
-.education-list {
+.education{
+    border-radius: 10px;
+    margin:50px 0px;
+}
+.education-img{
+    display: flex;
+    justify-content: end;
+}
+.education-img img{
+    width: 550px;
+    position:absolute;
+    margin:60px -100px;
+}
+.education-details{
+    display: flex;
+    gap:15px;
+    margin-top: 40px;
+}
+.list-vertical li{
+    margin-top: -12px;
+    list-style: none;
+}
+.inner-list::before{
+    content: "";
+    background-color: #000;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    display: inline-block;
+    border-radius: 25px;
+    position: relative;
+}
+.inner-list::after{
+    content:"";
+    width: 0px;
+    margin-top: -0px;
+    position: relative;
+    top:-6px;
+    left: 4px;
+    height: 120px;
+    display: block;
+    border: 3px solid #000;
+}
+.education-answer{
     display: flex;
     flex-direction: column;
-    margin: 0 30px;
-    list-style-type: square;
+    gap:1.2em;
+    margin-top: -10px;
 }
-
-.inner-list>div>h4 {
-    color: #053E53;
-    margin-top: 30px;
+.education-answer li{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
 }
-
-.inner-list>div>p {
-    margin-top: 25px;
+.education-answer div{
+    display: flex;
+    gap:20px;
+    flex-direction: column;
 }
-
-.score,
-.study-year {
-    font-size: 12px;
+.education-answer li:nth-child(2n){
+    margin-top: 18px;
 }
-
-.score {
-    color: #0C4458;
+.education-answer li:nth-child(3n){
+    margin-top:18px;
 }
-
 
 /*General Skills*/
 
@@ -472,74 +519,87 @@ footer {
     .close:hover {
         color: red;
     }
-    .profile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 97%;
-        height: auto;
-        margin: 20px auto;
-        box-sizing: border-box;
-    }
-    .name-job {
-        width: 100%;
+
+    .my-details{
         display: flex;
         flex-direction: column;
+        width: 100%; height: 580px;
         justify-content: center;
         align-items: center;
-        line-height: 40px;
-        padding: 10px;
+        margin:20px auto;
+        font-family: poppins;
+        
     }
-    .name-job h1 {
-        color: #000;
-        -webkit-text-stroke: 1px #000;
-        -webkit-text-fill-color: #fff;
+    .name-container{
+        text-align: center;
+        
+    }
+    .my-detail{
+        font-size: 15px;
+    }
+    .cube{
+        position: absolute;
+        width: 100px;
+        /* margin-top: 450px; */
+        margin:500px -30px;
+    }
+    .sphere{
+        position: absolute;
+        width: 100px;
+        float: right;
+        margin: 10px -0px;
+        opacity: 0.4;
+    }
+    .sphere-img{
+        display: flex;
+        justify-content: end;
+    }
+    .my-photo{
+        width: 150px;
+        border-radius: 100px;
+        margin:5px 0px;
         transition: 1s;
         cursor: pointer;
-        font-size: 30px;
+        animation: 1s rotate ease-in-out;
+        
     }
-    .name-job h1:hover {
-        transform: scale(1.3);
-    }
-    .name-job span {
-        -webkit-text-fill-color: #000;
-        ;
-    }
-    .name-job p {
-        font-size: 13px;
-        animation: leftin 0.5s linear;
-    }
-    @keyframes leftin {
-        0% {
-            transform: translateX(-300%);
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
         }
     }
-    .intro-btn {
-        width: 100px;
-        height: 30px;
-        background-color: #fff;
-        border: 1px solid black;
+    .my-name{
+        font-size: 40px;
+        font-weight:700;
+        background-image: /*#531652*/ linear-gradient(to right,#76757A,#aeacac);
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    .my-photo:hover{
+        width: 150px;
+    }
+    .my-info{
+        margin:20px 0px;
+        text-align:justify;
+        line-height: 25px;
+        font-size: 17px;
+        
+        padding: 10px;
+    }
+    .hero-btn{
+        border: 1px solid #555;
+        width: 100px; height: 30px;
+        border-radius: 25px;
         cursor: pointer;
-        animation: rightin 0.5s linear;
+        transition: 0.5s ease-in-out;
+        
     }
-    @keyframes rightin {
-        0% {
-            transform: translateX(400%);
-        }
-    }
-    .intro-btn:hover {
-        background-color: black;
-        color: whitesmoke;
-    }
-    .intro-icon {
-        display: none;
-    }
-    .intro-icon-mob {
-        font-size: 25px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        box-sizing: border-box;
+    .hero-btn:hover{
+        background-color: #070510;
+        color: #fff;
     }
     .fa-brands {
         color: #003B50;
@@ -549,7 +609,7 @@ footer {
         transform: scale(1.2);
     }
     main {
-        width: 95%;
+        width: 100%;
         margin: 10px auto;
         color: #555;
         padding: 10px;
@@ -593,6 +653,9 @@ footer {
     }
     .inner-list .study-year {
         font-size: 10px;
+    }
+    .education-img{
+        display: none;
     }
     .skills {
         width: 100%;
