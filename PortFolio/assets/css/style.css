@@ -29,6 +29,12 @@
 .thm:hover {
     transform: scale(1.2);
 }
+.hero-btn:hover,
+.cv-btn:hover,
+.form-btn:hover{
+    background-color: #070510;
+    color: #fff;
+}
 
 
 /*NAVIGATION BAR*/
@@ -130,9 +136,9 @@
 .cube{
     position: absolute;
     width: 200px;
-    /* margin-top: 450px; */
     margin:420px -60px;
     opacity: 0.5;
+    animation: up-down 5s infinite alternate-reverse ease-in-out;
 }
 .sphere{
     position: absolute;
@@ -140,10 +146,19 @@
     float: right;
     margin: 100px -0px;
     opacity: 0.4;
+    animation: up-down 5s infinite alternate-reverse ease-in-out;
 }
 .sphere-img{
     display: flex;
     justify-content: end;
+}
+@keyframes up-down{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
 }
 .my-photo{
     width: 150px;
@@ -168,6 +183,7 @@
     background-image: /*#531652*/ linear-gradient(to right,#76757A,#aeacac);
     background-clip: text;
     -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
 }
 .my-photo:hover{
     width: 250px;
@@ -186,11 +202,6 @@
     border-radius: 25px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-    
-}
-.hero-btn:hover{
-    background-color: #070510;
-    color: #fff;
 }
 
 /*Main Page*/
@@ -375,10 +386,7 @@ footer {
     display: block;
     margin: 0px auto;
     cursor: pointer;
-}
-
-.cv-btn:hover {
-    background-color: #000;
+    transition: 0.5s ease-in-out;
 }
 
 .cv-btn:hover a,
@@ -448,6 +456,7 @@ footer {
     cursor: pointer;
     display: block;
     margin: 0px auto;
+    transition: 0.5s ease-in-out;   
 }
 
 .form-btn:hover {
