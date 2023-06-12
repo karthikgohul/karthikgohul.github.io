@@ -353,6 +353,32 @@ footer {
     padding: 10px;
 }
 
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.experience-details{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.experience-answer{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top:-15px;
+    text-align: justify;
+}
+.experience-answer li{
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+}
+.experience-answer-2{
+    margin-top: 12px;
+}
+
 .horizantal-line {
     width: 100%;
     margin: auto;
