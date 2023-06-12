@@ -352,7 +352,27 @@ footer {
 .skill-img {
     padding: 10px;
 }
-
+.inner-list-exp::before{
+    content: "";
+    background-color: #000;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    display: inline-block;
+    border-radius: 25px;
+    position: relative;
+}
+.inner-list-exp::after{
+    content:"";
+    width: 0px;
+    margin-top: -0px;
+    position: relative;
+    top:-6px;
+    left: 4px;
+    height: 180px;
+    display: block;
+    border: 3px solid #000;
+}
 .experience{
     display: flex;
     flex-direction: column;
