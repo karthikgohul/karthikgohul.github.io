@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
@@ -9,8 +8,15 @@
     <script defer src="assets/scripts/script.js"></script>
     <script src="https://kit.fontawesome.com/8efa269c87.js" crossorigin="anonymous"></script>
 </head>
-
-<body class="theme">
+<body>
+    <div class="loading-container">
+    <div class="preloader">
+        <div></div>
+        <div></div>
+        <p>Loading...</p>
+    </div>
+</div>
+    <div  class="theme">
     <header>
         <nav>
             <div class="ham-menu" onclick="navMob()">
@@ -20,9 +26,9 @@
             </div>
             <div class="mobile-menu" id="mobile-menu">
                 <div class="nav-bar" id="nav-bar">
-                    <i class="close" onclick="closeNav()">X</i>
-                    <h2 class="site-name">PortFolio</h2>
-                    <ul class="nav-links">
+                    <span class="close" onclick="closeNav()">X</span>
+                    <h2 class="site-name"><a href="#">PortFolio</a></h2>
+                    <ul class="nav-links"  >
                         <li class="links" onclick="collapseNavbar()"><a href="#resume">Resume</a></li>
                         <li class="links" onclick="collapseNavbar()"><a href="#achievements">Achievements</a></li>
                         <li class="links" onclick="collapseNavbar()"><a href="#activities">Activities</a></li>
@@ -50,7 +56,7 @@
                 <h3 class="my-detail">Computer Science Engineer and Computer Enthusist</h3>
             </div>
                 <p class="my-info">I am computer science engineering student with a passion for front end web development and cyber security. I'm currently in my final year of school. I have experience with HTML, CSS, and JavaScript, and I'm currently learning React. I'm also interested in learning about ethical hacking and penetration testing.</p>
-                <button class="hero-btn">Know More</button>
+                <button class="hero-btn"><a href="https://github.com/karthikgohul" target="_blank">Know More</a></button>
             </div>
             </section>
         </div>
@@ -79,7 +85,7 @@
                   <ul class="education-answer">
                     <li>
                       <div>
-                        <h4>SBM COllege of Engineering and Technology</h4>
+                        <h4>SBM College of Engineering and Technology</h4>
                         <p class="date">2019 - 2023</p>
                       </div>
                       <p class="degree">Computer Science and Engineering</p>
@@ -148,8 +154,10 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
+        <br>
+        <hr class="horizantal-line">
+        <br>
         <section class="experience">
             <div class="experience">
                 <h3 class="title-4">Professional Experience</h2>
@@ -271,5 +279,6 @@
         </div>
         <h3 class="end">P0rtF0l10 by K4rth1k</h3>
     </footer>
+</div>
 </body>
 </html>
