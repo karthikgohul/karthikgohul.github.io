@@ -23,3 +23,36 @@ window.addEventListener("load",function(){
   preLoader.style.display="none"
   body.style.display="block"
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const slideshow = document.querySelector(".certs");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  let slideIndex = 0;
+
+  const slides = slideshow.querySelectorAll("div");
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[index].style.display = "block";
+  }
+
+  function nextSlide() {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    showSlide(slideIndex);
+  }
+
+  function prevSlide() {
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    showSlide(slideIndex);
+  }
+
+  nextButton.addEventListener("click", nextSlide);
+  prevButton.addEventListener("click", prevSlide);
+
+  showSlide(slideIndex);
+  setInterval(nextSlide, 5000); // Change slide every 3 seconds
+});
