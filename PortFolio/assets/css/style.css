@@ -492,6 +492,43 @@ footer {
 .my-badges>.htb {
     line-height: 40px;
 }
+.my-certs img{
+    width:90%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    margin-left: 50px;
+}
+.certs p{
+    text-align: center;
+}
+.my-certs{
+    display: flex;
+    flex-direction: column;
+}
+.my-certs>.certs-container{
+    width: 90%;
+    margin:50px auto;
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
 
 .cv-btn {
     width: 125px;
@@ -869,6 +906,44 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 5px;
+    }
+
+    .my-certs img{
+        width:80%;
+        height: 100%;
+        object-fit: cover;
+        justify-content: center;
+        margin-left:40px;
+    }
+    .certs p{
+        text-align: center;
+        font-size: 8px;
+    }
+    .my-certs{
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+    .my-certs>.certs-container{
+        width: 100%;
+        margin:50px auto;
+        position: relative;
+        height: 270px;
+        overflow: hidden;
+    }
+    .prev,
+    .next {
+        position: absolute;
+        transform: translateY(-60%);
+        color: black;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
     }
    
     .cv {
