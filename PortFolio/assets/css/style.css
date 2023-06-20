@@ -496,7 +496,6 @@ footer {
     width:90%;
     height: 100%;
     object-fit: cover;
-    justify-content: center;
     margin-left: 50px;
 }
 .certs p{
@@ -513,6 +512,10 @@ footer {
     height: 650px;
     overflow: hidden;
 }
+.cert-portrait{
+    width: 48% !important;
+    margin-left: 230px !important;
+   }
 .prev,
 .next {
   position: absolute;
@@ -931,6 +934,11 @@ footer {
         height: 270px;
         overflow: hidden;
     }
+   .cert-portrait{
+    width: 48% !important;
+    margin-left: 100px !important;
+   }
+
     .prev,
     .next {
         position: absolute;
@@ -1020,4 +1028,5 @@ footer {
         justify-content: center;
         margin-top: 10px;
     }
+
 }
