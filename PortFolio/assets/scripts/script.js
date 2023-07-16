@@ -1,28 +1,33 @@
+//Mobile Navbar
+
 function navMob() {
-    var Nav = document.getElementById('mobile-menu')
-    Nav.classList.toggle('mobile-menu')
+  var Nav = document.getElementById('mobile-menu')
+  Nav.classList.toggle('mobile-menu')
 }
 
 function closeNav() {
-    var close = document.getElementById('mobile-menu')
-    close.classList.toggle('mobile-menu')
+  var close = document.getElementById('mobile-menu')
+  close.classList.toggle('mobile-menu')
 }
 
 
 function collapseNavbar() {
-    var navbar = document.getElementById("mobile-menu");
-    if (window.innerWidth <= 768) {
-      navbar.classList.toggle('mobile-menu')
-    }
+  var navbar = document.getElementById("mobile-menu");
+  if (window.innerWidth <= 768) {
+    navbar.classList.toggle('mobile-menu')
   }
+}
 
+//Loading
 
 window.addEventListener("load",function(){
-  const preLoader=document.querySelector('.loading-container')
-  const body=document.querySelector('.theme')
-  preLoader.style.display="none"
-  body.style.display="block"
+const preLoader=document.querySelector('.loading-container')
+const body=document.querySelector('.theme')
+preLoader.style.display="none"
+body.style.display="block"
 });
+
+//Slideshow content
 
 document.addEventListener("DOMContentLoaded", function() {
   const slideshow = document.querySelector(".certs");
@@ -54,5 +59,5 @@ document.addEventListener("DOMContentLoaded", function() {
   prevButton.addEventListener("click", prevSlide);
 
   showSlide(slideIndex);
-  setInterval(nextSlide, 5000); // Change slide every 3 seconds
+  setInterval(nextSlide, 5000); // Change slide every 5 seconds
 });
