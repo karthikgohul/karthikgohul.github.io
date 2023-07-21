@@ -700,7 +700,14 @@ footer {
         display: none;
     }
     .intro-icon {
-        display: none;
+        display: flex;
+        justify-content: center;
+    }
+    .intro-icon a i{
+        color: white;
+    }
+    .intro-icon a i:hover{
+        color: #555;
     }
     /*Ham Menu*/
     .ham-menu {
