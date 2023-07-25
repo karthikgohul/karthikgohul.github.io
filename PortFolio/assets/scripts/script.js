@@ -61,3 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
   showSlide(slideIndex);
   setInterval(nextSlide, 5000); // Change slide every 5 seconds
 });
+
+let gotoTop=document.getElementById('goto_top');
+window.onscroll=function(){scrollFunction()};
+  function scrollFunction(){
+    if(document.body.scrollTop>700||document.documentElement.scrollTop>700){
+      gotoTop.style.display="block"
+    } else{
+      gotoTop.style.display="none"
+    }
+  }
