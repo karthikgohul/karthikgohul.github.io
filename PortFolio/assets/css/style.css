@@ -945,8 +945,11 @@ footer {
     .education-img{
         display: none;
     }
-    .inner-list{
-        height: 160px;
+    .education-answer li:nth-child(2n){
+        margin-top:24px;
+    }
+    .education-answer li:nth-child(3n){
+        margin-top:25px;
     }
     .skills {
         width: 100%;
@@ -963,7 +966,6 @@ footer {
         flex-direction: column;
         align-items: center;
         line-height: 50px;
-
     }
     .skills>.skill-details .skill-name h4 sup{
         font-size: 9px;
@@ -974,6 +976,9 @@ footer {
     }
     .inner-list-exp::before{
         margin-top: 5px;
+    }
+    .experience-answer-2{
+        margin-top: 22px !important;
     }
     .achievements {
         margin: -15px;
