@@ -923,12 +923,17 @@ footer {
         align-items: center;
         gap: 2em;
         padding: 20px;
+        border: 1px solid red;
     }
     .skills>.skill-details {
         display: flex;
         flex-direction: column;
         align-items: center;
         line-height: 50px;
+        border: 1px solid red;
+    }
+    .skills>.skill-details .skill-name h4 sup{
+        font-size: 10px;
     }
     .inner-list-exp::after{
         height: 345px;
