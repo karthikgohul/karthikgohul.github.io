@@ -933,7 +933,7 @@ footer {
         border: 1px solid red;
     }
     .skills>.skill-details .skill-name h4 sup{
-        font-size: 10px;
+        font-size: 9px;
     }
     .inner-list-exp::after{
         height: 345px;
