@@ -960,9 +960,11 @@ footer {
         align-items: center;
         gap: 2em;
         padding: 20px;
-        filter: grayscale(100%);
     }
-    .skills:hover{
+    .skills img{
+        filter: grayscale(50%);
+    }
+    .skills img:hover{
         filter:grayscale(0%);
     }
     .skills>.skill-details {
