@@ -20,16 +20,16 @@ function collapseNavbar() {
 
 //Loading
 
-window.addEventListener("load",function(){
-const preLoader=document.querySelector('.loading-container')
-const body=document.querySelector('.theme')
-preLoader.style.display="none"
-body.style.display="block"
+window.addEventListener("load", function () {
+  const preLoader = document.querySelector('.loading-container')
+  const body = document.querySelector('.theme')
+  preLoader.style.display = "none"
+  body.style.display = "block"
 });
 
 //Slideshow content
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const slideshow = document.querySelector(".certs");
   const prevButton = document.querySelector(".prev");
   const nextButton = document.querySelector(".next");
@@ -62,12 +62,12 @@ document.addEventListener("DOMContentLoaded", function() {
   setInterval(nextSlide, 5000); // Change slide every 5 seconds
 });
 
-let gotoTop=document.getElementById('goto_top');
-window.onscroll=function(){scrollFunction()};
-  function scrollFunction(){
-    if(document.body.scrollTop>700||document.documentElement.scrollTop>700){
-      gotoTop.style.display="block"
-    } else{
-      gotoTop.style.display="none"
-    }
+let gotoTop = document.getElementById('goto_top');
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    gotoTop.style.display = "block"
+  } else {
+    gotoTop.style.display = "none"
   }
+}
