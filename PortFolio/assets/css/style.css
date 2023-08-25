@@ -693,7 +693,8 @@ footer {
     transition: 0.3s;
 }
 
-.achieve-name li, .activities li{
+.achieve-name li,
+.activities li {
     list-style-type: "➤";
     padding-left: 5px;
 }
