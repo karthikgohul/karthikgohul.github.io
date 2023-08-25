@@ -686,14 +686,21 @@ footer {
 
 .achieve-name ul li a {
     text-decoration: none;
-    color: #555;
+    color: #053E53;
     cursor: pointer;
+    opacity: 0.7;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.achieve-name li, .activities li{
+    list-style-type: "➤";
+    padding-left: 5px;
 }
 
 .achieve-name ul li a:hover {
     color: #053E53;
-    ;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .cv-btn {
