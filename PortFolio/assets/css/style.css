@@ -295,7 +295,7 @@
 
 .my-photo {
     width: 150px;
-    border-radius: 100px;
+    border-radius: 50%;
     margin: 5px 0px;
     transition: 1s;
     cursor: pointer;
@@ -957,7 +957,7 @@ footer {
 
     .my-photo {
         width: 150px;
-        border-radius: 100px;
+        border-radius: 50%px;
         margin: 5px 0px;
         transition: 1s;
         cursor: pointer;
