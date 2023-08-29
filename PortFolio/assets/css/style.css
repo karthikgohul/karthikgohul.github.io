@@ -1099,14 +1099,6 @@ footer {
         padding: 20px;
     }
 
-    .skills img {
-        filter: grayscale(50%);
-    }
-
-    .skills img:hover {
-        filter: grayscale(0%);
-    }
-
     .skills>.skill-details {
         display: flex;
         flex-direction: column;
